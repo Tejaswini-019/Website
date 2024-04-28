@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background: url("https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg");
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            margin-top: 120px;
+            padding: 80px;
+            background-color: beige;
+            width: 500px;
+            margin-left: 520px;
+            background: url("https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        form{
+            padding: 20px;
+        }
+        input{
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        #web{
+            border-radius: 5px;
+            margin-left: 60px;
+            border: none;
+
+        }
+        .sign{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form class="from1" method="POST" action="form.php"> 
+            <p class="sign">Sign In</p>
+            <input class="un" name="firstname" placeholder="Enter Firstname"/><br>
+            <input class="un" name="secondname" placeholder="Enter Secondname"/><br>
+            <input type="password" class="un" name="pass" placeholder="Password"/><br>
+            <input type="submit" id="web"/>
+        </form>
+    </div>
+</body>
+</html>

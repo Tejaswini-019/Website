@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="menu-bar">
+        <!--unorder list-->
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="products.html" target="_blank">Product</a></li>
+            <li><a href="signin.html" target="_blank">Sign-in</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Contact</a>
+                <div class="submenu">
+                    <a href="#">8825540660</a>
+                    <a href="#" class="sub">94422133506</a><br>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script>
+        // JavaScript to show/hide submenu
+        document.addEventListener("DOMContentLoaded", function() {
+            var dropdown = document.querySelector('.dropdown');
+            var submenu = dropdown.querySelector('.submenu');
+    
+            dropdown.addEventListener('click', function(event) {
+                event.stopPropagation(); // Prevents dropdown from closing on itself
+                submenu.classList.toggle('show');
+            });
+    
+            document.addEventListener('click', function(event) {
+                var targetElement = event.target;
+                if (!dropdown.contains(targetElement)) {
+                    submenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
